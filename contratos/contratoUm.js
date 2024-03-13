@@ -14,9 +14,9 @@ class ContratoUm extends Phaser.Scene {
     create() {
       this.add.image(640, 300, "notebook").setScale(0.7);
 
-      this.add.rectangle(640, 230, 240, 260, '#F5F5DC');
+      this.add.rectangle(640, 230, 240, 260, 0xFFDEAD);
 
-      this.add.image(600, 250, 'fornecedor').setScale(2);
+      this.add.image(525, 330, 'fornecedor').setScale(2);
 
       this.check = this.add.image(675, 410, "check").setScale(6);
       this.check.setInteractive();
@@ -32,7 +32,7 @@ class ContratoUm extends Phaser.Scene {
         this.scene.start('Contratos');
       })
 
-      this.add.text(400, 200, 'Contrato', {fontSize:'30px', fill:'FFFFFF'});
+      this.add.text(550, 200, 'Contrato: \n jiwdbjk', {fontSize:'20px', fill:'0xFFFFFF'});
       
     }
   
